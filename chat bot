@@ -1,0 +1,30 @@
+def simple_chatbot(user_input):
+    # Convert user input to lowercase for case insensitive matching
+    user_input = user_input.lower()
+
+    # Define some predefined user queries and responses
+    responses = {
+        "hi": "Hello! How can I help you today?",
+        "how are you": "I'm good, thank you!",
+        "bye": "Goodbye! Have a nice day.",
+        "what is your name": "I'm a simple chatbot.",
+        "default": "I'm sorry, I don't understand that.",
+    }
+
+    # Check user input against predefined rules
+    if user_input in responses:
+        return responses[user_input]
+    elif "thanks" in user_input or "thank you" in user_input:
+        return "You're welcome!"
+    else:
+        return responses["default"]
+
+# Example usage:
+print("Welcome! Ask me something or say 'bye' to exit.")
+while True:
+    user_input = input("You: ")
+    if user_input.lower() == 'bye':
+        print(simple_chatbot(user_input))
+        break
+    else:
+        print(simple_chatbot(user_input))
