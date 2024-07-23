@@ -7,7 +7,7 @@ def simple_chatbot(user_input):
         "hi": "Hello! How can I help you today?",
         "how are you": "I'm good, thank you!",
         "bye": "Goodbye! Have a nice day.",
-        "what is your name": "I'm a simple chatbot.",
+        "what is your name": "I'am codesoft.",
         "default": "I'm sorry, I don't understand that.",
     }
 
